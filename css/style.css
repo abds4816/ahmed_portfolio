@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #393e45;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.text-primary {
+  color: #122867 !important;
+}
+
+.text-info {
+  color: #526494 !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-dark {
+  color: #393e45 !important;
+}
+
+.text-secondary {
+  color: #74757e !important;
+}
+
+.text-light {
+  color: #fafdff !important;
+}
+
+.bg-primary {
+  background-color: #122867 !important;
+}
+
+.bg-info {
+  background-color: #526494 !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-dark {
+  background-color: #393e45 !important;
+}
+
+.bg-secondary {
+  background-color: #74757e !important;
+}
+
+.bg-light {
+  background-color: #fafdff !important;
+}
+
+.section-padding {
+  padding: 3rem 0;
+}
+
+.btn {
+  padding: 0.75rem 3rem;
+  background-color: #122867;
+  color: #ffffff;
+}
+
+.section-title {
+  width: 50%;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.section-title .title {
+  color: #122867;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.section-title .title-description {
+  color: #526494;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ==========  Header Starts  ========== */
+.navbar {
+  padding: 2rem 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  background-color: #ffffff;
+  padding: 0.5rem 0;
+}
+
+/* ==========  Header Ends  ========== */
+/* ==========  Main Section Starts  ========== */
+.main-section .main-img {
+  overflow: hidden;
+  width: 70%;
+  margin: auto;
+  border-radius: 50%;
+  border: 3px solid #526494;
+}
+
+.main-section .main-img img {
+  position: relative;
+}
+
+.main-section .main-img img::before {
+  position: absolute;
+  content: '';
+  width: 120%;
+  height: 120%;
+  background-color: red;
+  z-index: 99;
+}
+
+/* ==========  Main Section Ends  ========== */
+/* ==========  About Section Starts  ========== */
+/* ==========  About Section Ends  ========== */
+/* ==========  Services Section Starts  ========== */
+.services-section .service-item {
+  padding: 2rem;
+  background-color: #fafdff;
+  border-radius: 1rem;
+}
+
+.services-section .service-item-image {
+  width: calc(150px + 1rem);
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+}
+
+.services-section .service-item-text .service-item-description {
+  font-size: 0.85rem;
+}
+
+/* ==========  Services Section Ends  ========== */
+/* ==========  Tools Section Starts  ========== */
+.tools-section .tool-item {
+  padding: 1rem 2rem;
+}
+
+.tools-section .tool-item-icon {
+  width: 100px;
+}
+
+.tools-section .tool-item-title {
+  margin: 1rem 0;
+}
+
+.tools-section .tool-item-description {
+  font-size: 0.85rem;
+  color: #74757e;
+}
+
+/* ==========  Tools Section Ends  ========== */
+/* ==========  Portfolio Section Starts  ========== */
+.portfolio-section .portfolio-item {
+  overflow: hidden;
+  border-radius: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.portfolio-section .portfolio-item:hover img {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* ==========  Portfolio Section Ends  ========== */
+/* ==========  Responsive Starts  ========== */
+@media (max-width: 991px) {
+  .section-title {
+    width: 75%;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-title {
+    width: 90%;
+  }
+}
+
+/* ==========  Responsive Ends  ========== */
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,130 @@
+@import 'variables';
+@import 'generals';
+@import 'classes';
+
+/* ==========  Header Starts  ========== */ 
+.navbar{
+    padding: 2rem 0;
+    transition: all 0.3s ease;
+    &.sticky{
+        background-color: $color-white;
+        padding: 0.5rem 0;
+    }
+}
+/* ==========  Header Ends  ========== */
+
+/* ==========  Main Section Starts  ========== */
+.main-section{
+    .main-img{
+        overflow: hidden;
+        width: 70%;
+        margin: auto;
+        border-radius: 50%;
+        border: 3px solid $color-info;
+        img{
+            position: relative;
+            &::before{
+                position: absolute;
+                content: '';
+                width: 120%;
+                height: 120%;
+                background-color: red;
+                z-index: 99;
+            }
+        }
+    }
+}
+/* ==========  Main Section Ends  ========== */
+
+/* ==========  About Section Starts  ========== */
+/* ==========  About Section Ends  ========== */
+
+/* ==========  Services Section Starts  ========== */
+.services-section{
+    .service-item{
+        padding: 2rem;
+        background-color: $color-light;
+        border-radius: 1rem;
+        &-image{
+            width: calc(150px + 1rem);
+            padding: 1rem;
+            border-radius: 1rem;
+            background-color: $color-white;
+        }
+        &-text{
+            .service-item-description{
+                font-size: 0.85rem;
+            }
+        }
+    }
+}
+/* ==========  Services Section Ends  ========== */
+
+/* ==========  Tools Section Starts  ========== */
+.tools-section{
+    .tool-item{
+        padding: 1rem 2rem;
+        &-icon{
+            width: 100px;
+        }
+        &-title{
+            margin: 1rem 0;
+        }
+        &-description{
+            font-size: 0.85rem;
+            color: $color-secondary;
+        }
+    }
+}
+/* ==========  Tools Section Ends  ========== */ 
+
+/* ==========  Portfolio Section Starts  ========== */
+.portfolio-section{
+    .portfolio-item{
+        overflow: hidden;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover{
+            img{
+                transition: transform 0.3s ease-in-out;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+/* ==========  Portfolio Section Ends  ========== */
+
+/* ==========  Responsive Starts  ========== */
+@media (max-width: 991px) {
+    .section-title{
+        width: 75%;
+    }
+//     .navbar{
+//         background-color: $color-white;
+//         .navbar-collapse{
+//             background-color: $color-white;
+//             width: 100vw !important;
+//         }
+//     }
+//     .main-section{
+//         text-align: center;
+//         .row{
+//             gap: 2rem;
+//             .intro{
+//                 margin-bottom: 2rem;
+//             }
+//             .main-img{
+//                 margin-top: 2rem;
+//             }
+//         }
+//     }
+} 
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+    .section-title{
+        width: 90%;
+    }
+}
+/* ==========  Responsive Ends  ========== */ 

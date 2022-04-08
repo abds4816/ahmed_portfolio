@@ -1,0 +1,64 @@
+.text-primary{
+    color: $color-primary !important;
+}
+.text-info{
+    color: $color-info !important;
+}
+.text-white{
+    color: $color-white !important;
+}
+.text-dark{
+    color: $color-dark !important;
+}
+.text-secondary{
+    color: $color-secondary !important;
+}
+.text-light{
+    color: $color-light !important;
+}
+.bg-primary{
+    background-color: $color-primary !important;
+}
+.bg-info{
+    background-color: $color-info !important;
+}
+.bg-white{
+    background-color: $color-white !important;
+}
+.bg-dark{
+    background-color: $color-dark !important;
+}
+.bg-secondary{
+    background-color: $color-secondary !important;
+}
+.bg-light{
+    background-color: $color-light !important;
+}
+.section-padding{
+    padding: 3rem 0;
+}
+
+.btn{
+    padding: 0.75rem 3rem;
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+@mixin title($Color, $FontWeight, $MarginBottom) {
+    color: $Color;
+    font-weight: $FontWeight;
+    margin-bottom: $MarginBottom;
+}
+
+.section-title{
+    width: 50%;
+    margin: 0 auto 2rem;
+    text-align: center;
+    .title{
+        @include title($color-primary, 600, 0.75rem);
+    }
+    .title-description{
+        @include title($color-info, 300, 1rem);
+        font-size: 0.9rem;
+    }
+}
